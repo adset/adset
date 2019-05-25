@@ -1,0 +1,77 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 40vmin;
+  pointer-events: none;
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+.is-valid {
+	border: 2px solid green;
+}
+
+.is-invalid {
+	border: 2px solid red;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+body {
+ background-color: #E6E6FA;
+}
+.container {
+  padding: 10px;
+}
+input[type=text], input[type=password],  input[type=email] {
+  width: 25%;
+  padding: 5px;
+  margin: 0px 0 15px 0;
+  display: inline-block;
+  /* border: none; */
+  background: #F8F8FF;
+}
+input[type=text]:focus, input[type=email]:focus, input[type=password]:focus {
+  background-color: white;
+  outline: none;
+}
+hr {
+  border: 1px solid #f1f1f1;
+  margin-bottom: 5px;
+}
+.button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 16px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 26%;
+  opacity: 0.9;
+}
+
+.registerbtn:hover {
+  opacity: 1;
+}
