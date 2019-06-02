@@ -1,0 +1,29 @@
+// .is-valid {
+// 	border: 2px solid green;
+// }
+
+// .is-invalid {
+// 	border: 2px solid red;
+// }
+
+
+.input {
+    width: 100%;
+    margin: 0px 0 15px 0;
+    display: inline-block;
+    border: none;
+    
+    input {
+        width: 100%;
+        padding: 5px 0;
+        padding-left: 5px;
+        border: 1px solid white;
+        background:transparent;
+        color: white;
+        box-sizing: border-box;
+
+        &::placeholder {
+            color: rgba(150, 153, 154, 0.85);
+        }
+    }
+  }

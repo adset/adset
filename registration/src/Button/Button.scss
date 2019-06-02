@@ -1,0 +1,30 @@
+.buttonContainer{
+  width: 100%;
+  display: block;
+  text-align: center;
+}
+
+.button {
+    background-color: #8197F4;
+    color: white;
+    padding: 5px 20px;
+    border: none;
+    border-radius: 30px;
+    font-size: 16px;
+
+    &:hover {
+      opacity: 0.95;
+      background-color: #6A85FA;      
+      cursor: pointer;
+    }
+
+    &:disabled {
+      opacity: 0.6;
+      cursor: not-allowed;
+
+      &:hover {
+        cursor: not-allowed;
+        background-color: #8197F4;
+      }
+    }
+  }

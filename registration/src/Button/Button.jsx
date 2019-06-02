@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 
-import "./App.css";
+import "./Button.scss";
 
 const user = {};
 
@@ -16,7 +16,7 @@ class Button extends Component {
     render() {
         const {buttonName, isValid} = this.props;
         return (
-            <div >
+            <div className='buttonContainer'>
                 <button onClick={this.onSubmit} className="button" disabled={!isValid}>{buttonName}</button>
             </div>
         );

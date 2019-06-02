@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 
-import './App.css';
+import './Input.scss';
 
 class Input extends Component {
 	

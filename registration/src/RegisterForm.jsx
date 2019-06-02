@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 
-import Button from './Button';
-import Input from './Input';
+import Button from './Button/Button';
+import Input from './Input/Input';
 import SelectCountry from './SelectCountry';
 
 import './App.css';
@@ -83,7 +83,7 @@ class RegisterForm extends Component {
 	render() {
 		const {firstName, lastName, email, password, confirmPass, phone} = this.state;
 		return (
-			<div>
+			<div className='regForm'>
 				<div className='' >
 					<h1>Registration</h1>
 				</div>
