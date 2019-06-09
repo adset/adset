@@ -84,17 +84,19 @@ class RegisterForm extends Component {
 		const {firstName, lastName, email, password, confirmPass, phone} = this.state;
 		return (
 			<div className='regForm'>
-				<div className='' >
+				<div className='regForm--header' >
 					<h1>Registration</h1>
 				</div>
 				<div className=''>
-					<Input type='text' placeholder='Enter Your Name' onChange={this.onChangeName} valid={firstName} />
-					<Input type='text' placeholder='Enter Your Surname' onChange={this.onChangeSurName} valid={lastName}/>
-					<Input type='email' placeholder='Enter Your Email' onChange={this.emailValidation} valid={email}/>
-					<SelectCountry select={this.onChangeCountry} />
-					<Input type='text' placeholder='Enter Your Phone' onChange={this.phoneValidation} valid={phone}/>
-					<Input type='password' placeholder='Enter Your Password' onChange={this.passwordValidation} valid={password}/>
-					<Input type='password' placeholder='Confirm Your Password' onChange={this.confirmPassword} valid={confirmPass}/>
+					<Input type='text' placeholder='Enter Your Name' onChange={this.onChangeName} valid={firstName} validationString='Name must be contained only from the letters' />
+					<Input type='text' placeholder='Enter Your Surname' onChange={this.onChangeSurName} valid={lastName} validationString='SurName must be contained only from the letters' />
+					<Input type='email' placeholder='Enter Your Email' onChange={this.emailValidation} valid={email} validationString='Email must be contained from the letters, or it can be numbers, _ and @' />
+					<div className='phone-container'>
+						<SelectCountry select={this.onChangeCountry} />
+						<Input type='text' placeholder='Enter Your Phone' onChange={this.phoneValidation} valid={phone} validationString='Phone must be contained from the 8 to 12 numbers' />
+					</div>
+					<Input type='password' placeholder='Enter Your Password' onChange={this.passwordValidation} valid={password} validationString='Password must be contained from the letters and numbers' />
+					<Input type='password' placeholder='Confirm Your Password' onChange={this.confirmPassword} valid={confirmPass} />
 				</div>
 				<div>
 					<Button buttonName="Submit" isValid={this.formValidation} userInfo={this.state} />

@@ -43,6 +43,7 @@ body {
   width: 35%;
   margin: auto;
   margin-top: 15px;
+  text-align: left;
   border: none;
   border-radius: 5px;
   padding: 5px 20px;
@@ -51,6 +52,27 @@ body {
   -moz-box-shadow: inset 3px 0px 54px 0px rgba(0,0,0,0.9);
   box-shadow: inset 3px 0px 54px 0px rgba(0,0,0,0.9);
 }
+.regForm--header {
+  text-align: center;
+}
+
+.phone-container {
+  display: inline-flex;
+  width: 100%;
+}
+
+.phone-container span {
+  margin-left: -12%;
+}
+
+select {
+  padding: 4px 5px;
+  background: transparent;
+  border: 1px solid white;
+  color: black;
+  border-right: none;
+}
+
 hr {
   border: 1px solid #f1f1f1;
   margin-bottom: 5px;

@@ -3,12 +3,17 @@ import React, { Component } from 'react';
 import './Input.scss';
 
 class Input extends Component {
-	
+	state = {
+		validation: true,
+		value: ''
+	}
 	render() {
-		const { type, placeholder, onChange, valid } = this.props;
+		const { type, placeholder, onChange, valid, validationString } = this.props;
 		return (
 			<div className='input'>
-				<input type={type} placeholder={placeholder} onChange={onChange} className={valid.length > 0 ? 'is-valid':'is-invalid'} />
+				<i class="tty icon"></i>
+				<input type={type} placeholder={placeholder} onChange={onChange} />
+				<span className={valid ? 'is-valid':'is-invalid'}>{validationString}</span>
 			</div>
 		);
 	}

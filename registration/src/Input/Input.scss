@@ -1,10 +1,19 @@
-// .is-valid {
-// 	border: 2px solid green;
-// }
+.is-valid {
+	display: none;
+}
 
-// .is-invalid {
-// 	border: 2px solid red;
-// }
+.is-invalid {
+    display: block;
+    visibility: visible;
+    color: black;
+}
+
+span {
+    font-size: 10px;
+    text-align: left;
+    margin: 0;
+    padding: 0;
+}
 
 
 .input {
@@ -21,9 +30,15 @@
         background:transparent;
         color: white;
         box-sizing: border-box;
+        padding-left: 5%;
 
         &::placeholder {
             color:black;
         }
+    }
+    i {
+        width: 15px;
+        height: 15px;
+        color: black;
     }
   }

@@ -34,10 +34,6 @@ class SelectCountry extends Component {
                     {
                         countryObject.map((item, index) => <option key={index} value={item.phoneCode}>{item.shortName}</option>)
                     }
-                    {/* <option value={countryObject[0].phoneCode}>{countryObject[0].shortName}</option>
-                    <option>RU</option>
-                    <option>UK</option>
-                    <option>USA</option> */}
                 </select>
             </div>
         );
